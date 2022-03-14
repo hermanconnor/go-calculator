@@ -31,3 +31,12 @@ func TestMultiply(t *testing.T) {
 		t.Errorf("want %f, got %f", want, got)
 	}
 }
+
+func TestDivide(t *testing.T) {
+	t.Parallel()
+	var want float64 = 5
+	got := calculator.Divide(10, 2)
+	if want != got {
+		t.Errorf("want %f, got %f", want, got)
+	}
+}
